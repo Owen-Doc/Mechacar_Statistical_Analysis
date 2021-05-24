@@ -2,7 +2,7 @@
 ## Deliverable 1: Linear Regression to Predict MPG
 I used R to create a multiple linear regression of the effect of vehicle length, vehicle weight, spoiler angle, ground clearance, and all wheel drive status to try to predict the MPG that a vehicle would get. Below is the summary of the model:
 
-![MultiLinearRegression](./images/MultiRegressionSummary.png)
+![MultiLinearRegression](images/MultiRegressionSummary.png)
 
 The null hypothesis is that the selected variables provide a random amount of variance in the mpg values. The alternative hypothesis is that the independent variables do not cause a random amount of variance in the mpg values. 
 ### Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
@@ -16,3 +16,13 @@ The slope of the linear model is not zero. Each of the variables tested has a co
 Drawing from the Adjusted R-Squared value of .6825 (68%), I can say that 68% of the variation of MPG can be explained by these 5 variables. This information is indicative that this model predicts mpg effectively, however I'd use caution before broadly applying these relationships as R-Squared values are sensitive to overfitting through adding too many variables to a multi-linear regression. I'd want to build a few more models, removing one variable at a time, and see how the R-squared value changes. 
 
 ## Summary Statistics on Suspension Coils
+Below are the summary statistics for all of the suspension coils:
+
+![AllSuspensionCoils](images/PSIsummaryStats.png "All Suspension Coils")
+
+Below are the summary statistics for the suspension coils sorted by the lot that they were manufactured at:
+
+![SuspensionCoilsByLot](images/PSIStatsbyLot.png "Suspension Coils Sorted by Lot")
+
+
+
