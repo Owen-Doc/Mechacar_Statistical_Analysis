@@ -2,7 +2,7 @@
 ## Deliverable 1: Linear Regression to Predict MPG
 I used R to create a multiple linear regression of the effect of vehicle length, vehicle weight, spoiler angle, ground clearance, and all wheel drive status to try to predict the MPG that a vehicle would get. Below is the summary of the model:
 
-![MultiLinearRegression](images/MultiRegressionSummary.png)
+![MultiLinearRegression](/images/MultiRegressionSummary.png)
 
 The null hypothesis is that the selected variables provide a random amount of variance in the mpg values. The alternative hypothesis is that the independent variables do not cause a random amount of variance in the mpg values. 
 ### Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
