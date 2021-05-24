@@ -14,3 +14,5 @@ The slope of the linear model is not zero. Each of the variables tested has a co
 
 ###Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
 Drawing from the Adjusted R-Squared value of .6825 (68%), I can say that 68% of the variation of MPG can be explained by these 5 variables. This information is indicative that this model predicts mpg effectively, however I'd use caution before broadly applying these relationships as R-Squared values are sensitive to overfitting through adding too many variables to a multi-linear regression. I'd want to build a few more models, removing one variable at a time, and see how the R-squared value changes. 
+
+## Summary Statistics on Suspension Coils
