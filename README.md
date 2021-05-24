@@ -2,7 +2,7 @@
 ## Deliverable 1: Linear Regression to Predict MPG
 I used R to create a multiple linear regression of the effect of vehicle length, vehicle weight, spoiler angle, ground clearance, and all wheel drive status to try to predict the MPG that a vehicle would get. Below is the summary of the model:
 
-![MultiLinearRegression](/images/MultiRegressionSummary.png)
+![MultiLinearRegression](Images/MultiRegressionSummary.png)
 
 The null hypothesis is that the selected variables provide a random amount of variance in the mpg values. The alternative hypothesis is that the independent variables do not cause a random amount of variance in the mpg values. 
 ### Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
@@ -18,11 +18,17 @@ Drawing from the Adjusted R-Squared value of .6825 (68%), I can say that 68% of 
 ## Summary Statistics on Suspension Coils
 Below are the summary statistics for all of the suspension coils:
 
-![AllSuspensionCoils](/Users/owendougherty/Desktop/Analytics_Bootcamp/R_Analysis/Mechacar_Statistical_Analysis/Images/PSIsummaryStats.png "All Suspension Coils")
+![AllSuspensionCoils](Images/PSIsummaryStats.png)
+
+The design specifications for the Mechacar suspension coils dictates that the variance of the suspension coils must not exceed 100 pounds per square inch. When we consider all three manufacturing lots, it appears that in total these coils pass that test, as the variance is 62.3. However, we must dig further into each manufacturing lots data.
 
 Below are the summary statistics for the suspension coils sorted by the lot that they were manufactured at:
 
-![SuspensionCoilsByLot](images/PSIStatsbyLot.png "Suspension Coils Sorted by Lot")
+![SuspensionCoilsByLot](Images/PSIStatsbyLot.png "Suspension Coils Sorted by Lot")
+
+This is exactly why it is important to thoroughly analyze our production data and sort it lot by lot. As we see in the table, Lots 1 and 2 both have a variance of less than 100 pounds per square inch, but Lot 3 has a variance of 170.3, which fails the quality test. In the aggregate, it appeared that all of the suspension coils passed the test, but clearly Lot 3 has some manufacturing failure that is causing a high degree of variability in the PSI of their suspension coils. 
+
+
 
 
 
