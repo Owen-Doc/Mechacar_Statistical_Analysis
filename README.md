@@ -18,7 +18,7 @@ Drawing from the Adjusted R-Squared value of .6825 (68%), I can say that 68% of 
 ## Summary Statistics on Suspension Coils
 Below are the summary statistics for all of the suspension coils:
 
-![AllSuspensionCoils](images/PSIsummaryStats.png "All Suspension Coils")
+![AllSuspensionCoils](/Users/owendougherty/Desktop/Analytics_Bootcamp/R_Analysis/Mechacar_Statistical_Analysis/Images/PSIsummaryStats.png "All Suspension Coils")
 
 Below are the summary statistics for the suspension coils sorted by the lot that they were manufactured at:
 
