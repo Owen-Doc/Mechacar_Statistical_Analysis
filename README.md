@@ -57,6 +57,10 @@ I then compared all 50 observations from Lot 3. The results are shown here:
 
 ![Lot3tTest](Images/lot3ttest.png)
 
+## Study Design: MechaCar vs. Competition
+
+When comparing the MechaCar to a competitor, I'd follow the scientific method to determine what questions consumers want answered, a hypothesis, a methodology to statistiscally compare the two companies, and then have actionable data that MechaCar can draw conclusions from.
+One question that I would ask is what vehicle specifications are consumers most price-sensitive to? Are consumers willing to pay more money for a sedan with higher horse power, better gas mileage, or better safety rating? In order to answer this question, I'd need to look at a competitors sales data for each vehicle purchased that includes the individual cars specifications. The null hypothesis for this model would be that each of these three selected metrics cause a random variation in the price of the car. The alternative hypothesis would be that one of these metrics causes a nonrandom variation in the sale price. I would first do a correlation analysis to get a general sense of each of these independent variables affects the price of the car on their own. I'd then do a multi-linear regression, and analyze the respective p-values for each of the independent variables. If the p-value is less than my confidence level, I would know that consumer behavior changes depending on the change in each variable. This would also be useful to determine which metrics MechaCar should spend less time on improving. If my statistical tests find that raw horsepower does not have a significant affect on sale price, I would advise MechaCar to invest less in bettering this technology, and look to other places to gain a price advantage over their competitors. I would need sales data, ideally straight from a dealership, to conduct this analysis, but there might be a way to control for resale value decreases, as long as I apply a "resale treatment" correctly to all vehicles sold. 
 
 
 
