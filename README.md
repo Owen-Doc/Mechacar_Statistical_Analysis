@@ -12,7 +12,7 @@ The vehicle length and ground clearance both have p-values that are well below t
 ### Is the slope of the linear model considered to be zero? Why or why not?
 The slope of the linear model is not zero. Each of the variables tested has a coefficient that is non-zero. The vehicle weight has the smallest coefficient (in absolute value) at .001245, so holding all other variables constant, an increase of 1 unit of weight would correlate with an increase of .001245 MPG for a car. While this is small, it is still non-zero. 
 
-###Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+### Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
 Drawing from the Adjusted R-Squared value of .6825 (68%), I can say that 68% of the variation of MPG can be explained by these 5 variables. This information is indicative that this model predicts mpg effectively, however I'd use caution before broadly applying these relationships as R-Squared values are sensitive to overfitting through adding too many variables to a multi-linear regression. I'd want to build a few more models, removing one variable at a time, and see how the R-squared value changes. 
 
 ## Summary Statistics on Suspension Coils
@@ -28,6 +28,34 @@ Below are the summary statistics for the suspension coils sorted by the lot that
 
 This is exactly why it is important to thoroughly analyze our production data and sort it lot by lot. As we see in the table, Lots 1 and 2 both have a variance of less than 100 pounds per square inch, but Lot 3 has a variance of 170.3, which fails the quality test. In the aggregate, it appeared that all of the suspension coils passed the test, but clearly Lot 3 has some manufacturing failure that is causing a high degree of variability in the PSI of their suspension coils. 
 
+## T-Tests on Suspension Coils
+
+I pulled a random sample of n=20 out of the population of 150 to try and determine if there was a statistically significant difference in the sample mean against the population mean. The results of the t-test are shown below:
+
+![SamplePulledFromAllLots](Images/ttest1.png)
+
+As we see here, the t-test returns a p-value of .1355, which is larger than the confidence level of .05. We fail to reject the null hypothesis, so when pulling a random sample of 20 cars from all lots, the sample's mean and population mean are equal.
+
+I also am interested to see how each manufacturing lot performs when compared to the population mean. 
+
+# Lot 1 T-Test
+I first compared all 50 observations from Lot 1 to the population mean using a t-test. The results are shown here:
+
+![Lot1tTest](Images/lot1ttest.png)
+
+We see here the p-value is much smaller than the confidence level of .05, so we reject the null hypothesis that the true mean of the sample is equal to the population mean. The Lot 1 mean is 1500 which is not equal to the population mean of 1498.78.
+
+# Lot 2 T-Test
+I then compared all 50 observations from Lot 2. The results are shown here:
+
+![Lot2tTest](Images/lot2ttest.png)
+
+Lot 2's sample had a p-value that also falls in the rejection region at our confidence level. We reject the null hypothesis that the true mean of the sample is equal to population mean.
+
+# Lot 3 T-Test
+I then compared all 50 observations from Lot 3. The results are shown here:
+
+![Lot3tTest](Images/lot3ttest.png)
 
 
 
